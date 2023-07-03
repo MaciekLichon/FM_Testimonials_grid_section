@@ -14,7 +14,7 @@ const { ownerImage, ownerName, ownerStatus, title, text, bgClass} = Astro.props;
 <div class={`tile ${bgClass}`}>
     <div class="tile__owner">
         <div class="tile__owner-imageContainer">
-            <img class="tile__owner-image" src={ownerImage} alt="">
+            <img class="tile__owner-image" src={ownerImage} alt="avatar">
         </div>
         <div class="tile__owner-details">
             <div class="tile__owner-name">{ownerName}</div>
@@ -54,6 +54,7 @@ const { ownerImage, ownerName, ownerStatus, title, text, bgClass} = Astro.props;
 
             &-status {
                 opacity: 0.5;
+                margin-top: 4px;
             }
         }
 
